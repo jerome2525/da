@@ -1,0 +1,59 @@
+//@include font-face("Georgia", font-files("Georgia.woff")); => include font face properly, just place it on /fonts folder
+@include font-face("Montserrat", font-files("montserrat-regular-webfont.woff"));
+@include font-face("CircularBold", font-files("CircularStd-Bold.woff"));
+@include font-face("CircularBook", font-files("CircularStd-Book.woff"));
+@include font-face("Proxima", font-files("ProximaNova-Regular.otf"));
+@include font-face("MarthaRegular", font-files("Marta_Regular.otf"));
+@include font-face("MarthaBold", font-files("Marta_Bold.otf"));
+@include font-face("Muli", font-files("Muli-Regular.ttf"));
+@include font-face("MuliBold", font-files("Muli-Bold.ttf"));
+@include font-face("FuturaPT", font-files("FuturaPTLight.otf"));
+$red: #ff4000;
+$blue: #337ab7;
+$gray: #4d4a49;
+$darkgray: darken($gray, 40%);
+$black: #000000;
+$gold: #D3B88B;
+$offwhite: #f8f8f8;
+$green: #395629;
+$white: #ffffff;
+$offblack: #333;
+$solidblack: #1a1918;
+
+/* Fonts
+---------------------------------------- */
+$font-stack-1: 'CircularBook';
+$font-stack-2: 'CircularBold';
+$font-stack-3: 'MarthaRegular';
+$font-stack-4: 'MarthaBold';
+$font-stack-5: 'Muli';
+$font-stack-7: 'MuliBold';
+$font-stack-6: 'FuturaPT';
+$font-stack-10: 'Montserrat';
+$font-stack-11: 'Proxima';
+
+/* Susy
+---------------------------------------- */
+
+$susy: (
+        columns: 12,
+        gutters: .25,
+        math: fluid,
+        output: float,
+);
+
+@include breakpoint-set('default feature', 'max-width');
+
+@include border-box-sizing;
+
+$mobile: max-width 767px;
+$mobiletab: max-width 1023px;
+$tablet: 768px 1023px;
+$portrait: 1024px 1279px;
+$desk: 1300px;
+
+
+
+
+
+
