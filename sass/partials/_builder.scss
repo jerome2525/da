@@ -50,6 +50,11 @@
 						.pp-advanced-menu {
 							.menu {
 								.menu-item {
+									&.current_page_item {
+										a {
+											color: #ff4000;
+										}
+									}
 									a {
 										font-size: 13px;
 										font-size: rem(13px);
@@ -168,6 +173,11 @@
 		.fl-col {
 			.fl-col-content {
 				.sub-heading {
+					&.rem-margin {
+						.fl-module-content {
+							margin-left: 0;
+						}
+					}
 					.fl-module-content {
 						margin-bottom: 20px;
 						margin-bottom: rem(20px);
@@ -180,6 +190,8 @@
 								font-family: $font-stack-5;
 								margin-bottom: 0;
 								letter-spacing: 3px;
+								letter-spacing: rem(3px);
+								text-transform: uppercase;
 								@include breakpoint($mobile) {
 									font-size: 16px;
 									font-size: rem(16px);
@@ -336,6 +348,11 @@
 			.fl-col {
 				.fl-col-content {
 					.sub-heading {
+						&.rem-margin {
+							.fl-module-content {
+								margin-left: 0;
+							}
+						}
 						.fl-module-content {
 							margin-bottom: 20px;
 							margin-bottom: rem(20px);
@@ -348,6 +365,8 @@
 									font-family: $font-stack-5;
 									margin-bottom: 0;
 									letter-spacing: 3px;
+									letter-spacing: rem(3px);
+									text-transform: uppercase;
 									@include breakpoint($mobile) {
 										font-size: 16px;
 										font-size: rem(16px);
@@ -358,8 +377,8 @@
 					}
 					.bite-heading {
 						.fl-module-content {
-							margin-bottom: 30px;
-							margin-bottom: rem(30px);
+							margin-bottom: 0;
+							//margin-bottom: rem(30px);
 							.fl-heading {
 								text-align: center;
 								font-size: 95px;
@@ -402,9 +421,12 @@
 	}
 	&.get-started-row {
 		.fl-row-content-wrap {
-			padding: 170px 0;
-			padding: rem(170px 0);
+			padding: 0;
+			//padding: rem(170px 0);
 			.fl-row-content {
+				.bite-heading .fl-module-content {
+					margin-bottom: 0;
+				}
 				.fl-col {
 					.fl-col-content {
 						.bite-heading {
@@ -418,14 +440,22 @@
 							}
 						}
 						.sub-heading {
+							&.rem-margin {
+								.fl-module-content {
+									margin-left: 0;
+								}
+							}
 							.fl-module-content {
-								margin-bottom: 00px;
+								margin-bottom: 0;
+								margin-left: 6px;
+								margin-left: rem(6px);
 								.fl-rich-text {
 									p {
 										text-align: left;
+										text-transform: uppercase;
 										margin: 0;
 										@include breakpoint($mobile) {
-											text-align: center;
+											text-align: center !important;
 										}
 									}
 								}
@@ -439,13 +469,22 @@
 }
 .country-row {
 	.fl-row-content-wrap {
-		padding: 170px 0;
-		padding: rem(170px 0);
+		padding: 0;
+		//padding: rem(170px 0);
 		.fl-row-content {
-			max-width: 954px;
-		    max-width: 59.625rem;
-		    width: 95%;
+			//max-width: 954px;
+		    //max-width: 59.625rem;
+		    //width: 95%;
+		    @include breakpoint($mobile) {
+		    	padding-right: 5%;
+				padding-left: 5%;
+		    }
 		    .sub-heading {
+		    	&.rem-margin {
+					.fl-module-content {
+						margin-left: 0;
+					}
+				}
 				.fl-module-content {
 					margin-bottom: 20px;
 					margin-bottom: rem(20px);
@@ -458,6 +497,8 @@
 							font-family: $font-stack-5;
 							margin-bottom: 0;
 							letter-spacing: 3px;
+							letter-spacing: rem(3px);
+							text-transform: uppercase;
 							@include breakpoint($mobile) {
 								font-size: 16px;
 								font-size: rem(16px);
@@ -468,10 +509,10 @@
 			}
 			.bite-heading {
 				.fl-module-content {
-					margin-bottom: 30px;
-					margin-bottom: rem(30px);
+					margin-bottom: 0;
+					//margin-bottom: rem(30px);
 					.fl-heading {
-						text-align: center;
+						//text-align: center;
 						font-size: 95px;
 						font-size: rem(95px);
 						font-weight: 300;
@@ -479,6 +520,7 @@
 						@include breakpoint($mobile) {
 							font-size: 50px;
 							font-size: rem(50px);
+							text-align: center;
 						}
 					}
 				}
@@ -1300,6 +1342,11 @@
 	.fl-row-content-wrap {
 		padding-top: 100px;
 		padding-top: rem(100px);
+		.fl-row-content {
+			@include breakpoint($mobile) {
+				text-align: center;
+			}
+		}
 		.fl-rich-text {
 			p {
 				line-height: 1.9em;
@@ -1485,10 +1532,18 @@
 	.fl-row-content-wrap {
 		padding: 40px 0;
 		padding: rem(40px 0);
+		.fl-row-content {
+			@include breakpoint($mobile) {
+				text-align: center;
+			}
+		}
 		.fl-rich-text {
 			p {
 				line-height: 1.9em;
 				letter-spacing: .03em;
+				a {
+					color:$red;
+				}
 			}
 		}
 		.experience-left-col {
@@ -1582,6 +1637,15 @@
 							margin-bottom: rem(30px);
 						}
 					}
+
+					.fluid-width-video-wrapper {
+						padding-top: 0 !important;
+    					height: 193px;
+    					height: rem(193px);
+    					@include breakpoint($mobile) {
+    						height: 250px;
+    					}
+					}
 				}
 			}
 		}
@@ -1595,6 +1659,9 @@
 			max-width: 954px;
 			max-width: rem(954px);
 			width: 95%;
+			@include breakpoint($mobile) {
+				text-align: center;
+			}
 			.fl-rich-text {
 				p {
 					line-height: 1.9em;
@@ -1754,6 +1821,11 @@
 		padding-top: rem(100px);
 		padding-bottom: 50px;
 		padding-bottom: rem(50px);
+		.fl-row-content {
+			@include breakpoint($mobile) {
+				text-align: center;
+			}
+		}
 		.why-travel-heading {
 			.fl-module-content {
 				margin-bottom: 50px;
@@ -1962,4 +2034,45 @@
 			}
 		}
 	}
+}
+
+.top-hotel-row {
+	.fl-row-content-wrap {
+
+	}
+	.fl-module-heading {
+		.fl-module-content {
+			margin-bottom: 40px;
+			margin-bottom: rem(40px);
+			.fl-heading {
+				font-size: 50px;
+			    font-size: rem(50px);
+			    font-family: "CircularBold";
+			}
+		}
+	}
+
+	.fl-module-post-grid {
+		.fl-module-content {
+			.fl-post-feed-post {
+				padding: 0 20px;
+				padding: rem(0 20px);
+				.fl-post-image {
+					.wp-post-image {
+						min-height: 194px;
+						min-height: rem(194px);
+						height: 194px;
+						height: rem(194px);
+						width: 100%;
+						object-fit:cover;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.fl-builder .pp-advanced-menu.full-screen .pp-menu-overlay ul.menu {
+	width: 100%;
 }
