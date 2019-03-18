@@ -2038,7 +2038,8 @@
 
 .top-hotel-row {
 	.fl-row-content-wrap {
-
+		padding: 70px 0;
+		padding: rem(70px 0);
 	}
 	.fl-module-heading {
 		.fl-module-content {
@@ -2054,6 +2055,9 @@
 
 	.fl-module-post-grid {
 		.fl-module-content {
+			.slick-dots {
+				bottom: -70px;
+			}
 			.fl-post-feed-post {
 				padding: 0 20px;
 				padding: rem(0 20px);
@@ -2065,6 +2069,31 @@
 						height: rem(194px);
 						width: 100%;
 						object-fit:cover;
+					}
+				}
+				.fl-post-text {
+					padding: 10px 0;
+					padding: rem(10px 0);
+					.fl-post-title {
+						margin-bottom: 10px;
+						margin-bottom: rem(10px);
+						a {
+							color: $black;
+							font-family: $font-stack-5;
+							&:hover {
+								color: $red;
+							}
+						}
+					}
+					.fl-post-excerpt {
+						p {
+							margin-bottom: 10px;
+							margin-bottom: rem(10px);
+							i {
+								margin-right: 5px;
+								margin-right: rem(5px);
+							}
+						}
 					}
 				}
 			}

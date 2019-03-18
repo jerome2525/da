@@ -1,38 +1,38 @@
 @font-face {
   font-family: "Montserrat";
-  src: url('fonts/montserrat-regular-webfont.woff?1552457278') format('woff');
+  src: url('fonts/montserrat-regular-webfont.woff?1551098002') format('woff');
 }
 @font-face {
   font-family: "CircularBold";
-  src: url('fonts/CircularStd-Bold.woff?1552457278') format('woff');
+  src: url('fonts/CircularStd-Bold.woff?1483833878') format('woff');
 }
 @font-face {
   font-family: "CircularBook";
-  src: url('fonts/CircularStd-Book.woff?1552457278') format('woff');
+  src: url('fonts/CircularStd-Book.woff?1483833878') format('woff');
 }
 @font-face {
   font-family: "Proxima";
-  src: url('fonts/ProximaNova-Regular.otf?1552457278') format('opentype');
+  src: url('fonts/ProximaNova-Regular.otf?1335886502') format('opentype');
 }
 @font-face {
   font-family: "MarthaRegular";
-  src: url('fonts/Marta_Regular.otf?1552457278') format('opentype');
+  src: url('fonts/Marta_Regular.otf?1363537386') format('opentype');
 }
 @font-face {
   font-family: "MarthaBold";
-  src: url('fonts/Marta_Bold.otf?1552457278') format('opentype');
+  src: url('fonts/Marta_Bold.otf?1363578832') format('opentype');
 }
 @font-face {
   font-family: "Muli";
-  src: url('fonts/Muli-Regular.ttf?1552457278') format('truetype');
+  src: url('fonts/Muli-Regular.ttf?1306252800') format('truetype');
 }
 @font-face {
   font-family: "MuliBold";
-  src: url('fonts/Muli-Bold.ttf?1552457278') format('truetype');
+  src: url('fonts/Muli-Bold.ttf?1306252800') format('truetype');
 }
 @font-face {
   font-family: "FuturaPT";
-  src: url('fonts/FuturaPTLight.otf?1552457278') format('opentype');
+  src: url('fonts/FuturaPTLight.otf?1364548650') format('opentype');
 }
 /* Fonts
 ---------------------------------------- */
@@ -1993,6 +1993,10 @@ div.site-inner .entry {
   font-size: 3.125rem;
 }
 
+.top-hotel-row .fl-row-content-wrap {
+  padding: 70px 0;
+  padding: 4.375rem 0;
+}
 .top-hotel-row .fl-module-heading .fl-module-content {
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
@@ -2001,6 +2005,9 @@ div.site-inner .entry {
   font-size: 50px;
   font-size: 3.125rem;
   font-family: "CircularBold";
+}
+.top-hotel-row .fl-module-post-grid .fl-module-content .slick-dots {
+  bottom: -50px;
 }
 .top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post {
   padding: 0 20px;
@@ -2013,6 +2020,29 @@ div.site-inner .entry {
   height: 12.125rem;
   width: 100%;
   object-fit: cover;
+}
+.top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text {
+  padding: 10px 0;
+  padding: 0.625rem 0;
+}
+.top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-title {
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+.top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-title a {
+  color: #000000;
+  font-family: "Muli";
+}
+.top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-title a:hover {
+  color: #ff4000;
+}
+.top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-excerpt p {
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+.top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-excerpt p i {
+  margin-right: 5px;
+  margin-right: 0.3125rem;
 }
 
 .fl-builder .pp-advanced-menu.full-screen .pp-menu-overlay ul.menu {

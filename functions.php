@@ -64,6 +64,7 @@ function da_enqueue_scripts_styles() {
   	wp_enqueue_style( 'child', get_stylesheet_directory_uri() . '/child.css', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'lity', '//cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.css' );
   
   // JS
   //wp_enqueue_script( 'jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array( 'jquery' ), "1.12.1" ); // sample
@@ -193,6 +194,21 @@ function da_remove_titles_all_single_pages() {
     }
 }
 
+add_shortcode('telephone_field', 'telephone_field');
+function telephone_field() {
+ob_start();
+if( have_rows('telephone_list') ):
 
+ 	// loop through the rows of data
+    while ( have_rows('telephone_list') ) : the_row();
+?>
+
+     <p><i class="fas fa-phone"></i> <a href="tel:<?php echo the_sub_field('telephone'); ?>"><?php echo the_sub_field('telephone'); ?></a></p>   
+<?php
+    endwhile;
+
+endif;
+return ob_get_clean();
+}
 
 //add_filter('wpcf7_autop_or_not', '__return_false'); 
