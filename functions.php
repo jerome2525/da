@@ -65,9 +65,11 @@ function da_enqueue_scripts_styles() {
 	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'lity', '//cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.css' );
+	wp_enqueue_style( 'star', '//cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css' );
   
   // JS
   //wp_enqueue_script( 'jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array( 'jquery' ), "1.12.1" ); // sample
+  wp_enqueue_script( 'star', '//cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js', array( 'jquery' ) );
   wp_enqueue_script( 'lity-js', '//cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.js', array( 'jquery' ) );
    wp_enqueue_script( 'sl1', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array( 'jquery' ) );
   wp_enqueue_script( 'child-js', get_stylesheet_directory_uri() . '/js/child.js', array( 'jquery' ), CHILD_THEME_VERSION );
@@ -193,22 +195,4 @@ function da_remove_titles_all_single_pages() {
 		remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
     }
 }
-
-add_shortcode('telephone_field', 'telephone_field');
-function telephone_field() {
-ob_start();
-if( have_rows('telephone_list') ):
-
- 	// loop through the rows of data
-    while ( have_rows('telephone_list') ) : the_row();
-?>
-
-     <p><i class="fas fa-phone"></i> <a href="tel:<?php echo the_sub_field('telephone'); ?>"><?php echo the_sub_field('telephone'); ?></a></p>   
-<?php
-    endwhile;
-
-endif;
-return ob_get_clean();
-}
-
 //add_filter('wpcf7_autop_or_not', '__return_false'); 

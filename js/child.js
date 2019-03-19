@@ -8,7 +8,7 @@
 		}); 
 
 		$('.post-module-slider .fl-post-feed').slick({
-		  dots: true,
+		  dots: false,
 		  infinite: false,
 		  speed: 300,
 		  slidesToShow: 3,
@@ -44,4 +44,13 @@
 		});
   
   	});
+
+  	$(document).on('click', '.slide-control-icon .fa-chevron-circle-right', function(event) { 
+	    event.preventDefault(); 
+	    $(".post-module-slider .slick-next").click(); 
+	});
+	$(document).on('click', '.slide-control-icon .fa-chevron-circle-left', function(event) { 
+	    event.preventDefault(); 
+	    $(".post-module-slider .slick-prev").click(); 
+	});
 })(jQuery);
