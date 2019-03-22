@@ -27,7 +27,8 @@ function rating_star() {
 	ob_start();
 
 	$y = get_field('rating_score');
-	
+	$half_star = explode('.', (string) $y);
+	$half_star_fin = $half_star[1] * .100;
 	$x = 1; 
 ?>
 <p class="rating">
@@ -35,7 +36,10 @@ function rating_star() {
 	while($x <= $y) {
 	    echo "<i class='fas fa-star star-rating' ></i>  ";
 	    $x++;
-	} 
+	}
+	if($half_star_fin  < 1 && $half_star_fin  != 0) {
+		echo "<i class='fas fa-star-half-alt'></i>";
+	}
 ?>
 </p>
 <?php

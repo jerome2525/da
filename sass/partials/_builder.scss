@@ -1340,8 +1340,8 @@
 }
 .sub-destination-row {
 	.fl-row-content-wrap {
-		padding-top: 100px;
-		padding-top: rem(100px);
+		padding: 35px 0;
+		padding: rem(35px 0);
 		.fl-row-content {
 			@include breakpoint($mobile) {
 				text-align: center;
@@ -1361,16 +1361,16 @@
 		}
 		.row-seperator-2 {
 			.fl-module-content {
-				margin-bottom: 40px;
-				margin-bottom: rem(40px);
 				margin-top: 30px;
 				margin-top: rem(30px);
 			}
 		}
 		.row-seperator-3 {
 			.fl-module-content {
-				margin-top: 50px;
-				margin-top: rem(50px);
+				margin-top: 30px;
+				margin-top: rem(30px);
+				margin-bottom: 30px;
+				margin-bottom: rem(30px);
 			}
 		}
 		.main-heading {
@@ -1525,6 +1525,12 @@
 					}
 				}
 			}
+		}
+	}
+	&.sub-map-row {
+		.fl-row-content-wrap {
+			padding-top: 0px;
+			padding-top: rem(0px);
 		}
 	}
 }
@@ -2040,13 +2046,13 @@
 
 .top-hotel-row {
 	.fl-row-content-wrap {
-		padding: 70px 0;
-		padding: rem(70px 0);
+		padding-bottom: 30px;
+		padding-bottom: rem(30px);
 	}
 	.fl-module-heading {
 		.fl-module-content {
-			margin-bottom: 40px;
-			margin-bottom: rem(40px);
+			margin-bottom: 20px;
+			margin-bottom: rem(20px);
 			.fl-heading {
 				font-size: 50px;
 			    font-size: rem(50px);
@@ -2121,6 +2127,14 @@
 							&:before {
 								color: $red;
 							}
+
+						}
+						.fa-star-half-alt {
+							position: relative;
+							color: $red;
+							&:before {
+								color: $red;
+							}
 						}
 						position: relative;
 						.rating {
@@ -2145,18 +2159,16 @@
 							}
 						}
 						.map-cont {
-							width: 150px;
-							width: rem(150px);
-    						height: 50px;
-    						height: rem(50px);
+							width: 100%;
+    						height: 120px;
+    						height: rem(120px);
     						display: block;
     						position: relative;
     						img {
     							object-fit: cover;
-    							width: 150px;
-								width: rem(150px);
-	    						height: 50px;
-	    						height: rem(50px);
+    							width: 100%;
+	    						height: 120px;
+	    						height: rem(120px);
     						}
     						.overlay {
 	 							position: absolute;

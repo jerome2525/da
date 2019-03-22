@@ -1378,8 +1378,8 @@ div.site-inner .entry {
 }
 
 .sub-destination-row .fl-row-content-wrap {
-  padding-top: 100px;
-  padding-top: 6.25rem;
+  padding: 35px 0;
+  padding: 2.1875rem 0;
 }
 @media (max-width: 767px) {
   .sub-destination-row .fl-row-content-wrap .fl-row-content {
@@ -1395,14 +1395,14 @@ div.site-inner .entry {
   margin-bottom: 3.125rem;
 }
 .sub-destination-row .fl-row-content-wrap .row-seperator-2 .fl-module-content {
-  margin-bottom: 40px;
-  margin-bottom: 2.5rem;
   margin-top: 30px;
   margin-top: 1.875rem;
 }
 .sub-destination-row .fl-row-content-wrap .row-seperator-3 .fl-module-content {
-  margin-top: 50px;
-  margin-top: 3.125rem;
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .sub-destination-row .fl-row-content-wrap .main-heading .fl-module-content {
   margin-bottom: 30px;
@@ -1540,6 +1540,10 @@ div.site-inner .entry {
   .sub-destination-row.featured-row .fl-row-content-wrap .featured-col.display-none {
     display: none;
   }
+}
+.sub-destination-row.sub-map-row .fl-row-content-wrap {
+  padding-top: 0px;
+  padding-top: 0rem;
 }
 
 .top-experience-row .fl-row-content-wrap {
@@ -1996,12 +2000,12 @@ div.site-inner .entry {
 }
 
 .top-hotel-row .fl-row-content-wrap {
-  padding: 70px 0;
-  padding: 4.375rem 0;
+  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 .top-hotel-row .fl-module-heading .fl-module-content {
-  margin-bottom: 40px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .top-hotel-row .fl-module-heading .fl-module-content .fl-heading {
   font-size: 50px;
@@ -2072,6 +2076,13 @@ div.site-inner .entry {
 .top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-excerpt .star-rating:before {
   color: #ff4000;
 }
+.top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-excerpt .fa-star-half-alt {
+  position: relative;
+  color: #ff4000;
+}
+.top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-excerpt .fa-star-half-alt:before {
+  color: #ff4000;
+}
 .top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-excerpt .rating {
   margin-left: 0;
   margin-bottom: 20px;
@@ -2094,19 +2105,17 @@ div.site-inner .entry {
   opacity: .7;
 }
 .top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-excerpt .map-cont {
-  width: 150px;
-  width: 9.375rem;
-  height: 50px;
-  height: 3.125rem;
+  width: 100%;
+  height: 120px;
+  height: 7.5rem;
   display: block;
   position: relative;
 }
 .top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-excerpt .map-cont img {
   object-fit: cover;
-  width: 150px;
-  width: 9.375rem;
-  height: 50px;
-  height: 3.125rem;
+  width: 100%;
+  height: 120px;
+  height: 7.5rem;
 }
 .top-hotel-row .fl-module-post-grid .fl-module-content .fl-post-feed-post .fl-post-text .fl-post-excerpt .map-cont .overlay {
   position: absolute;
